@@ -1,0 +1,107 @@
+/* GENERAL */
+
+html, body {
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    color: #F5F5F5;
+    background-color: #000000;
+    background: -moz-linear-gradient(45deg, #000000 0%, #000000 53%, #543F13 100%);
+    background: -webkit-linear-gradient(45deg, #000000 0%, #000000 53%, #543F13 100%);
+    background: linear-gradient(45deg, #000000 0%, #000000 53%, #543F13 100%);
+}
+
+input[type="image"] { 
+    outline: none;
+}
+
+h1 {
+    font-family: 'Bevan', cursive;
+    letter-spacing: 5px;
+}
+
+/* TWO COLUMNS */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+  
+.column {
+    flex: 50%;
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* DETAILS */
+
+.image {
+    margin-top: 50px;
+    filter: contrast(130%);
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.normal {
+    position: absolute;
+}
+
+.reverse {
+    transform: scaleX(-1);
+}
+
+.box {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    height: 200px;
+    text-align: -webkit-center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* TEXT AND INPUT */
+
+#jokesText {
+    font-family: 'Kadwa', serif;
+    font-weight: 700;
+}
+
+#jokesInput {
+    height: 350px;
+    width: 350px;
+    filter: invert(100%);
+    transform: rotate(5deg);
+}
+
+#jokesInput:hover {
+    filter: brightness(80%) contrast(150%);
+}
+
+/* NO IMAGE */
+
+@media screen and (max-width: 700px) {
+    .column {
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+    }
+
+    h1, p {
+        font-size: medium;    
+    }
+
+    #jokesInput {
+        height: 50px;
+        width: 50px;
+        filter: invert(100%);
+        transform: rotate(5deg);
+        justify-content: center;
+    }
+}
