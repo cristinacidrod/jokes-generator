@@ -19,6 +19,7 @@ input[type="image"] {
 h1 {
     font-family: 'Bevan', cursive;
     letter-spacing: 5px;
+    text-decoration: underline;
 }
 
 /* TWO COLUMNS */
